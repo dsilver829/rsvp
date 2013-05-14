@@ -1,4 +1,7 @@
 Rsvp::Application.routes.draw do
+  resources :guests
+
+
   resources :parties
 
 

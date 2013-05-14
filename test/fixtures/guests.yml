@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyText
+  party_id: 1
+  address: MyText
+
+two:
+  name: MyText
+  party_id: 1
+  address: MyText
