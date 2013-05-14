@@ -1,13 +1,18 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <b>Name:</b>
+  <%= @party.name %>
+</p>
+
+<p>
   <b>Event:</b>
   <%= link_to @party.event.name, @party.event %>
 </p>
 
 <p>
-  <b>Name:</b>
-  <%= @party.name %>
+  <b>Response:</b>
+  <%= @party.response.nil? ? 'Unknown' : @party.response %>
 </p>
 
 <p>
