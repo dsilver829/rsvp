@@ -81,4 +81,14 @@ class PartiesController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  def search
+    @party = Party.find_by_name(params[:party][:name])
+    if @party
+      redirect_to edit_party_url(@party)
+    else
+      flash[:alert] = 'Party not found.'
+      redirect_to root_url
+    end
+  end
 end

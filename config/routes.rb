@@ -3,6 +3,7 @@ Rsvp::Application.routes.draw do
 
 
   resources :parties
+  post '/parties/search' => 'parties#search'
 
 
   resources :events
